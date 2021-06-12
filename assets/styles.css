@@ -12,6 +12,12 @@
     padding: 1rem 6rem;
     background: rgb(121 105 18);  
 }
+.navbar .logo img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    top: 0;
+}
 
 ul.navlinks {
     display: flex;
@@ -79,6 +85,12 @@ ul li a {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+h4 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 .gallery-content p {
     color: #A6A5AA;
@@ -89,7 +101,6 @@ ul li a {
 
 .product-img {
    display: flex;
-   /* flex-wrap: wrap; */
    justify-content: center;
    padding-top: 3rem;
 }
@@ -125,63 +136,12 @@ div.img {
     letter-spacing: 2px;
 }
 .wrapper {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     height: 100%;
     place-items: center;
     text-align: center;
 }
-/* .wrapper .imageWrap {
-    position: relative;
-    height: 250px;
-    width: 280px;
-    border: 2px dashed rgb(121 105 18);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.wrapper .image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.wrapper .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.imageWrap .icon {
-    font-size: 100px;
-    color: rgb(121 105 18);
-}
-.imageWrap .text {
-    font-size: 20px;
-    color: rgb(121 105 18);
-    font-weight: 500;
-}
-.imageWrap .cancel-button {
-    position: absolute;
-    right: 25px;
-    top: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    color: rgb(121 105 18);
-}
-.imageWrap .file-name {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    background: rgb(121 105 18);
-    padding: 5px 0;
-    font-size: 18px;
-    color: #fff;
-} */
+
 .wrapper #custom-button {
     margin-top: 30px;
     width: 25%;

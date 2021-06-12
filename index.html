@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c94a959c39.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+    <header>
+        <div class= navbar>
+            <div class="logo">
+                <img src="/assets/images/Grand Vintage.jpg" alt="SouthPole Stitches">
+            </div>
+            <div class="searchBox">
+                <input type="text" placeholder="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                <li><a href="#"><i class="fab fa-opencart"></i></a></li>
+            </ul>
+            <button>sign in</button>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-content-heading">
+            <h3>Bespoke Fashion for Your Highness!</h3>
+            <p>let us redefine, diversify and replicate your style, with a wide range of quality fabrics, state of the art fashion equipments and seasoned designers. We make bold to say we will surpass your wildest imaginations on creativity. <br> <q>...Just because we can</q>
+        </div>
+        <div class="banner-content-btn">
+            <a href="#">Learn More</a>
+        </div>
+        
+    </div>
+    <!-- product gallery -->
+    <div class="product-gallery">
+        <div class="gallery-content">
+            <h4>Product Gallery</h4>
+            <p>Delve into our product gallery to see beautiful collections of bespoke attires that will inspire you everyday and keep you outstanding</p>
+        </div>
+        <div class="product-img">
+            
+            <div class="img">
+                <img src="assets/images/Grand Vintage.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>Grand Vintage shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN15,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Maroon frontaed Designer Shirt.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>Grand bespoke shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN25,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Double Breasted Flowery Designer Shirt.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>SouthPole bespoke shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN25,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Coloured pocket Kaftan.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong> Bespoke Kaftan. <br> Available in all sizes <br>
+                    <strong>Cost:NGN20,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="product-img">
+            
+            <div class="img">
+                <img src="assets/images/Grand Vintage.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>Grand Vintage shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN15,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Maroon frontaed Designer Shirt.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>Grand bespoke shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN25,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Double Breasted Flowery Designer Shirt.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong>Designer bespoke shirt. <br> Available in all sizes <br>
+                    <strong>Cost:NGN25,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/images/Coloured pocket Kaftan.jpg" alt="">
+                <p class="product-description">
+                    <strong>Description:</strong> Bespoke Kaftan. <br> Available in all sizes <br>
+                    <strong>Cost:NGN20,000</strong> <br>
+                </p>
+                <div class="product-buy-btn">
+                    <a href="#">Buy Now</a>
+                </div>
+            </div>
+           
+        </div>
+        <span id="result">Results here</span>
+    </div>
+    <!-- Add product form -->
+    <form class="addProductForm" action="">
+        
+        <div class="wrapper">
+            <h3>Add a Product</h3>
+            <input type="file" id="default-btn" hidden>
+            <button type="button" id="custom-button">Upload a Photo</button>
+            <span id="custom-text">No photo uploaded, yet.</span>
+            <textarea placeholder="Product Description" id="productDescription"></textarea>
+            <input type="text" id="productCost" placeholder="Cost">
+        </div> 
+        
+        <div class="product-buy-btn addProdBtn" id="addProductBtn">
+          <button type="button" onclick="addNewProduct()"><a href="#">Add Product</a></button> 
+        </div>
+        
+    </form>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <h4>Send us a message</h4>
+            <p>Because it is bespoke, drop us a message about your specifications and let us recreate!</p>
+        </div>
+        <div class="footer-input">
+            <input type="text" placeholder="Name"> 
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="footer-textarea">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="footer-btn">
+            <a href="#">Send Message</a>
+        </div>
+        <h6>Copyright &copy; 2021 Southpole Stitches.</h6>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

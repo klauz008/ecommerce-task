@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background: rgb(121 105 18);  
+}
+
+ul.navlinks {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw;
+}
+.banner {
+    background-repeat: no-repeat;
+    padding: 7rem 30rem;
+    background-image: url(../assets/images/bckgpix.jpg);
+    background-size: cover;
+    
+    
+}
+.banner-content-heading {
+    color: rgb(121 105 18);
+    text-align: center;
+}
+.banner-content-heading h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: rgb(121 105 18);
+}
+
+.banner-content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;   
+}
+.banner-content-btn a {
+    background: rgb(121 105 18);
+    text-decoration: none;
+    color: #060b0e;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+.product-gallery {
+    background: #fff;
+    padding: 4rem;
+}
+
+.gallery-content {
+    text-align: center;
+}
+
+.gallery-content h4 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.gallery-content p {
+    color: #A6A5AA;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+.product-img {
+   display: flex;
+   /* flex-wrap: wrap; */
+   justify-content: center;
+   padding-top: 3rem;
+}
+
+div.img {
+    margin: 10px;
+}
+
+.img img {
+    width: 250px;
+    height: 180px;
+    border-radius: 20%;
+}
+.img p {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.product-buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;   
+}
+.product-buy-btn a {
+    background: rgb(121 105 18);
+    text-decoration: none;
+    color: #010608;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding: 10px 30px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+.wrapper {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+/* .wrapper .imageWrap {
+    position: relative;
+    height: 250px;
+    width: 280px;
+    border: 2px dashed rgb(121 105 18);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.imageWrap .icon {
+    font-size: 100px;
+    color: rgb(121 105 18);
+}
+.imageWrap .text {
+    font-size: 20px;
+    color: rgb(121 105 18);
+    font-weight: 500;
+}
+.imageWrap .cancel-button {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(121 105 18);
+}
+.imageWrap .file-name {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(121 105 18);
+    padding: 5px 0;
+    font-size: 18px;
+    color: #fff;
+} */
+.wrapper #custom-button {
+    margin-top: 30px;
+    width: 25%;
+    height: 25px;
+    display: block;
+    border: none;
+    background: rgb(121 105 18);
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #fff;
+}
+#custom-text {
+    color: rgb(121 105 18);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+input[type="file"] {
+    margin: 10px 0 10px 0;
+    padding-left: 70px;
+    color: rgb(121 105 18);
+    position: absolute;
+}
+label{
+    margin: 10px 0 10px 0;
+    color: rgb(121 105 18);
+}
+input[type="text"] {
+    border: 1px solid rgb(121 105 18);
+    outline: none;
+}
+.addProdBtn{
+    margin: 20px 0 20px 0;
+}
+.buyButton {
+    display: none;
+}
+
+.footer {
+    background: #010608;
+    padding: 3rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content h4 {
+    color:  rgb(121 105 18);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-content p {
+    color:  rgb(121 105 18);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+.footer-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.footer-input input[type="text"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 25%;
+    outline: none;
+    border: 1px solid rgb(121 105 18);
+    background: transparent;
+    color: rgb(121 105 18);
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+input[type="email"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 25%;
+    outline: none;
+    border: 1px solid rgb(121 105 18);
+    background: transparent;
+    color: rgb(121 105 18);
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: rgb(121 105 18);
+}
+
+div.footer-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.wrapper textarea {
+    width: 51%;
+    height: 150px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(121 105 18);
+    background: transparent;
+    color: rgb(121 105 18);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 51%;
+    height: 150px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(121 105 18);
+    background: transparent;
+    color: rgb(121 105 18);
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.footer-btn a {
+    background: rgb(121 105 18);
+    text-decoration: none;
+    color: #010608;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding: 10px 50px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.footer h6 {
+    text-align: center;
+    color:  rgb(121 105 18);
+    font-size: 1rem;
+    padding-top: 6rem;
+}
